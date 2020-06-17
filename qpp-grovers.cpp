@@ -1,5 +1,5 @@
 // Grover's searching
-// Source: ./examples/grover.cpp
+// Source: qpp/examples/grover.cpp
 #include <cmath>
 #include <iostream>
 #include <tuple>
