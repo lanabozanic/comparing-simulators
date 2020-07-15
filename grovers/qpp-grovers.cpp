@@ -13,7 +13,7 @@ int main() {
     using namespace std::chrono;
 
 
-    idx n = 10; // number of qubits
+    idx n = 12; // number of qubits
     std::cout << ">> Grover on n = " << n << " qubits\n";
 
     std::vector<idx> dims(n, 2); // local dimensions

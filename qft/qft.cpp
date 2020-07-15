@@ -4,9 +4,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <omp.h>
 
 #include "qpp.h"
-#include "/usr/local/opt/libomp/include/omp.h"
+
 
 
 int main(int argc, char **argv) {
@@ -19,6 +20,8 @@ int main(int argc, char **argv) {
     idx num_cores = std::stoi(argv[1]); // number of cores
     idx n = std::stoi(argv[2]);         // number of qubits
     omp_set_num_threads(num_cores);     // number of cores
+
+    //OMP_NUM_THREADS = 2;
 
     std::vector<idx> qubits(n); // initial state
     ket psi = mket(qubits);
